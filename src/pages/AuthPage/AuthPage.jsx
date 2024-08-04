@@ -19,13 +19,13 @@ const AuthPage = () => {
                         </div>
                         <div className="input-div flex row justify-between px-6 my-3">
                             <label><input type="checkbox" /> Remember me</label>
-                            <p><a href="#">Forgot password?</a></p>
+                            <p><a href="">Forgot password?</a></p>
                         </div>
                         <div className='button-div flex justify-center'>
                             <button type='submit' className='rounded-3xl px-2 py-2 w-[calc(100%-2.5rem)]'>Login</button>
                         </div>
                         <div className='register-link-div mt-3 flex justify-center'>
-                            <p>Don't have an account? <a href="#" className='font-bold'>Register</a></p>
+                            <p>Don't have an account? <a href="" className='font-bold'>Register</a></p>
                         </div>
                     </form>
                 </div>
