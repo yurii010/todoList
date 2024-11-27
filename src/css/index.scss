@@ -1,42 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-$accentColor: rgb(118, 76, 107);
+$accentColor: rgb(118, 160, 218);
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
 }
 
 .auth-page-div {
-    background-image: url('../assets/background-img.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../assets/background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .form-div {
-    background: transparent;
-    backdrop-filter: blur(20px);
-    border: 1px solid $accentColor;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid $accentColor;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.input-div>input {
-    border: 1px solid $accentColor;
+.blur-layout{
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid $accentColor;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
-.input-div>input::placeholder {
-    color: #fff;
+.blur-layout::placeholder{
+  color: #fff;
 }
 
-.button-div>button {
-    background-color: $accentColor;
+.none-orange-input{
+  outline: none;
 }
 
-.input-div>box-icon {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
+.shadow-layout{
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.input-div > input::placeholder{
+  color: #fff;
+  outline: none;
+}
+
+.button-div > button {
+  background-color: $accentColor;
+}
+
+.input-div > box-icon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
